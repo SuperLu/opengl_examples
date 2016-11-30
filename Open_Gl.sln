@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Open_Gl", "Open_Gl\Open_Gl.vcxproj", "{C91E2C3B-51B6-44D8-A5AD-AFBD07BC11FE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mfc_opengl", "mfc_opengl\mfc_opengl.vcxproj", "{CE09E696-E39D-4C56-A249-DA6E94496938}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C91E2C3B-51B6-44D8-A5AD-AFBD07BC11FE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C91E2C3B-51B6-44D8-A5AD-AFBD07BC11FE}.Debug|Win32.Build.0 = Debug|Win32
+		{C91E2C3B-51B6-44D8-A5AD-AFBD07BC11FE}.Debug|x64.ActiveCfg = Debug|Win32
+		{C91E2C3B-51B6-44D8-A5AD-AFBD07BC11FE}.Release|Win32.ActiveCfg = Release|Win32
+		{C91E2C3B-51B6-44D8-A5AD-AFBD07BC11FE}.Release|Win32.Build.0 = Release|Win32
+		{C91E2C3B-51B6-44D8-A5AD-AFBD07BC11FE}.Release|x64.ActiveCfg = Release|Win32
+		{CE09E696-E39D-4C56-A249-DA6E94496938}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE09E696-E39D-4C56-A249-DA6E94496938}.Debug|Win32.Build.0 = Debug|Win32
+		{CE09E696-E39D-4C56-A249-DA6E94496938}.Debug|x64.ActiveCfg = Debug|x64
+		{CE09E696-E39D-4C56-A249-DA6E94496938}.Debug|x64.Build.0 = Debug|x64
+		{CE09E696-E39D-4C56-A249-DA6E94496938}.Release|Win32.ActiveCfg = Release|Win32
+		{CE09E696-E39D-4C56-A249-DA6E94496938}.Release|Win32.Build.0 = Release|Win32
+		{CE09E696-E39D-4C56-A249-DA6E94496938}.Release|x64.ActiveCfg = Release|x64
+		{CE09E696-E39D-4C56-A249-DA6E94496938}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
