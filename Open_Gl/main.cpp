@@ -1,8 +1,9 @@
 //#include <iostream>
 #include <windows.h>
-#include "glew.h"
-#include "glut.h"
-#include "ximage.h"
+#include "../thirdparty/glew/include/GL/glew.h"
+#include "../thirdparty/glut/glut.h"
+#include "../thirdparty/cximage/include/cximage/ximage.h"
+
 
 
 #define NEHE_OPENGL_LESSON_1

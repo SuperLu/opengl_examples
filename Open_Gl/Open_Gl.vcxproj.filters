@@ -19,12 +19,4 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="fglut\glut.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="glew\include\GL\glew.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>

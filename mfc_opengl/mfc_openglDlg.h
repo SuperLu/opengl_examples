@@ -3,8 +3,10 @@
 //
 
 #pragma once
-#include "../glew/include/GL/glew.h"
-#include "../glut/glut.h"
+#pragma comment(lib,"../thirdparty/glut/glut32.lib")
+
+#include "../thirdparty/glew/include/GL/glew.h"
+#include "../thirdparty/glut/glut.h"
 
 
 // Cmfc_openglDlg ¶Ô»°¿ò

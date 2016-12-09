@@ -61,7 +61,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EntryPointSymbol>
       </EntryPointSymbol>
-      <AdditionalDependencies>..\glut\glut32.lib;..\cximage\cximage.lib;..\cximage\jasper.lib;..\cximage\jbig.lib;..\cximage\jpeg.lib;..\cximage\libdcr.lib;..\cximage\libpsd.lib;..\cximage\mng.lib;..\cximage\png.lib;..\cximage\Tiff.lib;..\cximage\zlib.lib;..\glew\lib\Release\Win32\glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../thirdparty/glut/glut32.lib;../thirdparty/glew/lib/Release/Win32/glew32.lib;../thirdparty/cximage/lib/cximage.lib;../thirdparty/cximage/lib/jpeg.lib;../thirdparty/cximage/lib/jbig.lib;../thirdparty/cximage/lib/jasper.lib;../thirdparty/cximage/lib/libdcr.lib;../thirdparty/cximage/lib/mng.lib;../thirdparty/cximage/lib/png.lib;../thirdparty/cximage/lib/Tiff.lib;../thirdparty/cximage/lib/zlib.lib;../thirdparty/cximage/lib/libpsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -84,10 +84,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="fglut\glut.h" />
-    <ClInclude Include="glew\include\GL\glew.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
