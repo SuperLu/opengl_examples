@@ -73,7 +73,7 @@ BOOL Cmfc_openglDlg::OnInitDialog()
 							///////////////////////////////////////////////////////////////////////// 
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-
+	srand((unsigned)time(NULL));
 	SetTimer(1, 10, 0);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
@@ -117,7 +117,7 @@ HCURSOR Cmfc_openglDlg::OnQueryDragIcon()
 void Cmfc_openglDlg::OnTimer(UINT nIDEvent)
 {
 	RenderScene();
-	m_yRotate += 3;
+	//m_yRotate += 3;
 	CDialog::OnTimer(nIDEvent);
 }
 
@@ -196,6 +196,7 @@ BOOL Cmfc_openglDlg::CreateViewGLContext(HDC hDC)
 
 void Cmfc_openglDlg::RenderScene()
 {
+#if 0
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 
@@ -209,5 +210,33 @@ void Cmfc_openglDlg::RenderScene()
 	glVertex3f(1.0f, -1.0f, 0.0f);     // Bottom Right 
 	glEnd();           // Finished Drawing The Triangle 
 	SwapBuffers(hrenderDC);
+
+#else
+	static int len = 0;
+	float x, y;
+	x = rand() / (double)(RAND_MAX / 10);
+	y = rand() / (double)(RAND_MAX / 10);
+	if (len<200)
+	{
+		samples[len][0] = x;
+		samples[len][1] = y;
+		len++;
+	}
+	TRACE("%f,%f\r\n", x,y);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glPushMatrix();
+	glLoadIdentity();
+	glBegin(GL_POINTS); // Drawing Using Triangles 
+	glColor3f(1.0f, 1.0f, 0.0f);
+	for (int i = 0; i < len; i++)
+	{
+		glVertex3f(samples[i][0], samples[i][1], -50.0f);
+	}
+	
+
+	glEnd();           // Finished Drawing The Triangle 
+	glPopMatrix();
+	SwapBuffers(hrenderDC);
+#endif
 }
 

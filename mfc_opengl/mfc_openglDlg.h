@@ -44,4 +44,5 @@ private:
 	HGLRC hrenderRC;  //渲染上下文
 	float m_yRotate;  //转速
 	int PixelFormat;    //像素格式
+	float samples[2000][2];
 };
